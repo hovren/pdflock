@@ -31,7 +31,7 @@ def get_password():
         if password == repeated:
             return password
         else:
-            print "Passwords did not match"
+            print("Passwords did not match")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -43,10 +43,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     if not os.path.exists(args.input):
-        print "Input file {} does not exist.".format(args.input)
+        print("Input file {} does not exist.".format(args.input))
         sys.exit(-1)
     if os.path.exists(args.output) and not args.force:
-        print "Output file {} already exists.".format(args.input)
+        print("Output file {} already exists.".format(args.input))
         sys.exit(-2) 
     
     password = None
@@ -58,5 +58,5 @@ if __name__ == "__main__":
     
     if password is not None:
         protect(args.input, args.output, password)
-        print "Created {}".format(args.output)
+        print("Created {}".format(args.output))
         
