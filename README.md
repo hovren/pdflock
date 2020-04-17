@@ -13,9 +13,9 @@ To set the password non-interactively, run
     $ pdflock.py input.pdf output.pdf --password="my secret"
 
 ## Installation
-This program requires the pyPdf module to be installed.
+This program requires the PyPDF2 module to be installed.
 
-For Fedora you can install this with `yum install pyPdf`
+You can install this using pip `pip install PyPDF2`
 
 ## Licensing
 This program was written by Hannes Ovrén (hannes@ovren.se).

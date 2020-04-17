@@ -9,7 +9,7 @@ import getpass
 import os
 import sys
 
-from pyPdf import PdfFileWriter, PdfFileReader
+from PyPDF2 import PdfFileWriter, PdfFileReader
 
 def protect(ifname, ofname, password):
     with open(ifname, "rb") as ifile, open(ofname, "wb") as ofile:
